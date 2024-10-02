@@ -741,6 +741,7 @@
       padding: 5px 10px;
     }
   }
+  
   /* Footer Styles */
 
 footer {
@@ -922,5 +923,72 @@ footer {
 }
 
 #about a:hover {
+  color: #23527c;
+}
+
+#publications {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#publications h2 {
+  margin-top: 0;
+  font-weight: bold;
+  color: #333;
+  font-size: 24px;
+  text-align: center;
+}
+
+#publications h3 {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #666;
+  font-size: 18px;
+}
+
+#publications ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#publications li {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+#publications li:last-child {
+  border-bottom: none;
+}
+
+#publications a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+#publications a:hover {
+  color: #23527c;
+}
+
+#publications .magazine {
+  font-size: 16px;
+  color: #666;
+}
+
+#publications .phd-thesis {
+  font-size: 16px;
+  color: #666;
+}
+
+#publications .phd-thesis a {
+  font-size: 14px;
+  color: #337ab7;
+}
+
+#publications .phd-thesis a:hover {
   color: #23527c;
 }
