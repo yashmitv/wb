@@ -44,12 +44,7 @@
             scrollTop: 0
         }, 500);
     });
-    // script.js
-const nav = document.querySelector('.nav');
-const navMobile = document.querySelector('.nav-mobile');
-const navToggle = document.querySelector('.nav-toggle');
-
-navToggle.addEventListener('click', () => {
+ navToggle.addEventListener('click', () => {
   nav.classList.toggle('hidden');
   navMobile.classList.toggle('hidden');
 });
