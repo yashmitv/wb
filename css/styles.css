@@ -623,125 +623,131 @@
   
   /* Media Queries */
   
-  @media only screen and (max-width: 750px) {
-    #experience-timeline:before,
-    #experience-timeline:after {
-      left: 23px;
-    }
-    .vtimeline-date {
-      width: auto;
-      text-align: left;
-      position: relative;
-      margin-bottom: 15px;
-      display: block;
-      margin-left: 70px;
-    }
-    .vtimeline-icon {
-      margin-left: 0;
-    }
-    .vtimeline-content {
-      margin-left: 70px;
-    }
+/* Mobile-First Approach */
+body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Simplified Media Queries */
+@media only screen and (max-width: 768px) {
+  /* Adjust layout and design for mobile screens */
+  header {
+    position: fixed;
+    display: none;
+    z-index: 999;
+    animation: none;
+    bottom: 0;
+    height: 100%;
   }
-  
-  @media only screen and (max-width: 992px) {
-    #lead {
-      height: auto;
-      min-height: auto;
-      max-height: auto;
-      padding: 100px 15px;
-    }
-    #lead-content {
-      position: relative;
-      transform: none;
-      left: auto;
-      top: auto;
-    }
-    #lead-content h1 {
-      font-size: 3em;
-    }
-    #lead-content h2 {
-      font-size: 1.75em;
-    }
-    #about {
-      text-align: center;
-    }
-    #about p {
-      text-align: left;
-    }
+  #mobile-menu-open,
+  #mobile-menu-close {
+    display: block;
   }
-  
-  @media only screen and (max-width: 768px) {
-    header {
-      position: fixed;
-      display: none;
-      z-index: 999;
-      animation: none;
-      bottom: 0;
-      height: 100%;
-    }
-    #mobile-menu-open,
-    #mobile-menu-close {
-      display: block;
-    }
-    #menu {
-      height: 100%;
-      overflow-y: auto;
-      box-shadow: none;
-      border-radius: 0;
-      width: 100%;
-    }
-    #menu li {
-      display: block;
-      margin-bottom: 10px;
-    }
-    #lead-content h1 {
-      font-size: 2em;
-    }
-    #lead-content h2 {
-      font-size: 1.3em;
-    }
-    #lead-content a {
-      padding: 10px 20px;
-    }
-    #lead-down {
-      display: none;
-    }
-    .education-block h3,
-    .education-block span {
-      float: none;
-    }
-    .project-image {
-      display: none;
-    }
-    .project-info {
-      position: relative;
-      margin: 0;
-      padding: 30px 15px;
-      top: auto;
-      transform: none;
-    }
-    footer {
-      text-align: center;
-    }
-    .social {
-      text-align: center;
-    }
+  #menu {
+    height: 100%;
+    overflow-y: auto;
+    box-shadow: none;
+    border-radius: 0;
+    width: 100%;
   }
-  
-  @media only screen and (max-width: 480px) {
-    #lead-content h1 {
-      font-size: 1.5em;
-    }
-    #lead-content h2 {
-      font-size: 1em;
-    }
-    #lead-content a {
-      font-size: 0.9em;
-      padding: 5px 10px;
-    }
+  #menu li {
+    display: block;
+    margin-bottom: 10px;
   }
-  
+  #lead-content h1 {
+    font-size: 2em;
+  }
+  #lead-content h2 {
+    font-size: 1.3em;
+  }
+  #lead-content a {
+    padding: 10px 20px;
+  }
+  #lead-down {
+    display: none;
+  }
+  .education-block h3,
+  .education-block span {
+    float: none;
+  }
+  .project-image {
+    display: none;
+  }
+  .project-info {
+    position: relative;
+    margin: 0;
+    padding: 30px 15px;
+    top: auto;
+    transform: none;
+  }
+  footer {
+    text-align: center;
+  }
+  .social {
+    text-align: center;
+  }
+}
+
+/* Adjust layout and design for larger screens */
+@media only screen and (min-width: 769px) {
+  /* Adjust layout and design for desktop screens */
+  header {
+    position: fixed;
+    display: block;
+    z-index: 999;
+    animation: none;
+    bottom: 0;
+    height: 100%;
+  }
+  #mobile-menu-open,
+  #mobile-menu-close {
+    display: none;
+  }
+  #menu {
+    height: auto;
+    overflow-y: visible;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 250px;
+  }
+  #menu li {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  #lead-content h1 {
+    font-size: 3em;
+  }
+  #lead-content h2 {
+    font-size: 1.75em;
+  }
+  #lead-content a {
+    padding: 15px 30px;
+  }
+  #lead-down {
+    display: block;
+  }
+  .education-block h3,
+  .education-block span {
+    float: left;
+  }
+  .project-image {
+    display: block;
+  }
+  .project-info {
+    position: relative;
+    margin: 0;
+    padding: 30px 15px;
+    top: auto;
+    transform: none;
+  }
+  footer {
+    text-align: left;
+  }
+  .social {
+    text-align: left;
+  }
+}
   /* Footer Styles */
 
 footer {
